@@ -7,74 +7,92 @@
   <title>Сайт-резюме</title>
   <meta name="description" content="Сайт-резюме Владимира Карауловского">
   <meta name="keywords" content="Vladimir, cv, resume">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-  <img src="PIC-.JPG" width="50" alt="фото-аватар">
-  <h1>Владимир Карауловский</h1>
-  <p>Я нахожусь в процессе <strong>изучения</strong> новой профессии в сфере IT, много интересного и увлекательного.</p>
-  <p><em>Будем <strong>надеяться на прогрес</strong>с в выбранном направлении.</em></p>
-  <h2>Мои хобби:</h2>
-  <ul>
-    <li>
-      Музыка
-      <ol>
-        <li>Отечественный рок</li>
-        <li>Зарубежный рок рок</li>
+  <div class="container">
+    <div class="info">
+      <img src="PIC-.JPG" class="avatar" alt="фото-аватар">
+        <div class="info-text">
+          <h1>Владимир Карауловский</h1>
+          <p>Я нахожусь в процессе изучения <strong>новой профессии в сфере IT</strong>, здесь очень много интересного и увлекательного.</p>
+          <p>Будем <em>надеяться на прогрес</em>с в выбранном направлении.</p>
+        
+          <h4>Социальные сети:</h4>
+          <a href="https://t.me/" target="_blank">Telegram</a> |
+          <a href="https://vk.com/" target="_blank">В контакте</a> |
+          <a href="https://ok.ru/" target="_blank">Одноклассники</a>
+        </div>
+    </div>
+    <div class="card bg-green">
+      <h2>Мои хобби:</h2>
+      <ol class="list">
+        <li>Музыка</li>
+        <li>Творчество</li>
+        <li>Книги</li>
       </ol>
-    </li>
-    <li>Творчество</li>
-    <li>Поэзия</li>
-    <li>Философия</li>
-    <li>Стройка</li>
-  </ul>
-  <h2>Опыт работы</h2>
-  <table border="">
-    <thead>
-      <tr>
-        <th>Организация</th>
-        <th>Должность</th>
-        <th>Пеоиод работы</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>ГКУ "ДЭСЗС" Москомспорта</td>
-        <td>Старший специалист</td>
-        <td>2008 - 2019</td>
-      </tr>
-      <tr>
-        <td>ООО "Копейка МО"</td>
-        <td>Заведующий</td>
-        <td>2005 - 2006</td>
-      </tr>
-    </tbody>
+    </div>
+    <div class="card bg-red">
+      <h2>Опыт работы</h2>
+      <table class="table">
+        <!-- <thead>
+          <tr>
+            <th>Организация</th>
+            <th>Должность</th>
+            <th>Пеоиод работы</th>
+          </tr>
+        </thead> -->
+        <tbody>
+          <tr>
+            <td>ГКУ "ДЭСЗС" Москомспорта</td>
+            <td>Старший специалист</td>
+            <td>2008 - 2019</td>
+          </tr>
+          <tr>
+            <td>ООО "Копейка МО"</td>
+            <td>Заведующий</td>
+            <td>2005 - 2006</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card bg-yellow">
+      <h2>Мои изучаемые направления</h2>
+      <ul class="link-list">
+        <li>
+          <a href="№">Веб-разработка</a>
+        </li>
+        <li>
+          <a href="#">English</a>
+        </li>
+      </ul>
+    </div>
 
-  </table>
-  <h2>Социальные сети:</h2>
-  <a href="https://t.me/" target="_blank">Telegram</a> |
-  <a href="https://vk.com/" target="_blank">В контакте</a> |
-  <a href="https://ok.ru/" target="_blank">Одноклассники</a>
-  <h2>Связаться со мной</h2>
-  <form action="/">
-    <div>
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="Введите имя">
-    </div>
+    <form action="/" class="form">
+      <h2>Связаться со мной</h2>
+      <div class="form-row">
+      <div class="form-group">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" placeholder="Введите имя">
+      </div>
+      <div class="form-group">
+        <label for="email">Ваш email:</label>
+        <input type="email" id="email" placeholder="Введите email">
+      </div>
+      </div>
+      <div class="form-group">
+        <label for="messege">Ваше сообщение:</label>
+        <textarea id="messege" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+      </div>
+      <input class="btn" type="submit" value="Отправить">
+    </form>
     <br>
-    <div>
-      <label for="email">Ваш email:</label>
-      <input type="email" id="email" placeholder="Введите email">
-    </div>
     <br>
-    <div>
-      <label for="messege">Ваше сообщение:</label>
-      <br>
-      <textarea id="messege" cols="20"rows="5" placeholder="Введите сообщение..."></textarea>
-    </div>
     <br>
-    <input type="submit" value="Отправить">
-  </form>
+    <br>
+    <br>
+  </div>
 </body>
-
 </html>
